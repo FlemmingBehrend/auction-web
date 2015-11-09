@@ -8,7 +8,9 @@
         'ui.router',
         'pascalprecht.translate',
         'auction.constants',
-        'auction.welcome'
+        'auction.welcome',
+        'auction.register',
+        'auction.login'
     ]);
 
 })();

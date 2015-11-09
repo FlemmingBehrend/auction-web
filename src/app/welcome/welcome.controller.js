@@ -13,7 +13,7 @@
         activate();
 
         function activate() {
-            welcome.text = 'Welcome';
+
         }
 
     }

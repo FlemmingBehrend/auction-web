@@ -31,6 +31,18 @@ module.exports = function (config) {
             'src/app/welcome/welcome.controller.js',
             'src/app/welcome/welcome.controller.spec.js',
 
+            // Register module
+            'src/app/register/register.module.js',
+            'src/app/register/register.route.js',
+            'src/app/register/register.controller.js',
+            'src/app/register/register.controller.spec.js',
+
+            // Login module
+            'src/app/login/login.module.js',
+            'src/app/login/login.route.js',
+            'src/app/login/login.controller.js',
+            'src/app/login/login.controller.spec.js',
+
             // services
 
             // common modules

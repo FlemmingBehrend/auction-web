@@ -10,7 +10,7 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         conf: {
-            appRoot: 'src/'
+            appRoot: 'src'
         },
         jshint: {
             options: {
@@ -41,9 +41,11 @@ module.exports = function (grunt) {
                     livereload: '<%= connect.options.livereload %>'
                 },
                 files: [
-                    '<%= conf.appRoot %>app/index.html',
+                    '<%= conf.appRoot %>index.html',
                     '<%= conf.appRoot %>app/auction.html',
                     '<%= conf.appRoot %>app/welcome/*.html',
+                    '<%= conf.appRoot %>app/register/*.html',
+                    '<%= conf.appRoot %>app/login/*.html',
                 ]
             }
         },

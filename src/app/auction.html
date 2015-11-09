@@ -1,17 +1,23 @@
 <md-toolbar>
-    <div class="md-toolbar-tools">
-        <h1>
-            <span>Online Auction House</span>
+    <div class="md-toolbar-tools" ng-controller="AuctionController as auction">
+        <h1 style="cursor: hand">
+            <span ui-sref="auction.welcome">{{'label.TITLE' | translate}}</span>
         </h1>
         <span flex></span>
-        <md-button aria-label="Login">
-            Login
+        <md-button aria-label="Login" ui-sref="auction.login" aria-label="Login">
+            {{'button.LOGIN' | translate}}
         </md-button>
-        <md-button aria-label="Register">
-            Register
+        <md-button aria-label="Register" ui-sref="auction.register" aria-label="Register">
+            {{'button.SIGN_UP' | translate}}
+        </md-button>
+        <md-button ng-click="auction.changeToDanish()">
+            {{'button.LANG_DANISH' | translate}}
+        </md-button>
+        <md-button ng-click="auction.changeToEnglish()">
+            {{'button.LANG_ENGLISH' | translate}}
         </md-button>
     </div>
 
 </md-toolbar>
 
-<ui-view></ui-view>
+<ui-view style="margin-top: 80px;"></ui-view>

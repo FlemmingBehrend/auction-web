@@ -3,7 +3,7 @@
 
     var cut, scope;
 
-    beforeEach(module('auction.welcome'));
+    beforeEach(module('auction.register'));
 
     beforeEach(inject(function ($rootScope) {
         scope = $rootScope;
@@ -11,7 +11,7 @@
 
     function createController(ctrl) {
         cut = (function () {
-            return ctrl('WelcomeController', {
+            return ctrl('RegisterController', {
                 $scope: scope
             });
         })();
