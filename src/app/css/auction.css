@@ -14,28 +14,28 @@
     color: #d2d2d2;
     text-shadow: 2px 2px #000eff;
 }
-.content {
-    -webkit-transition: -webkit-transform 1s;
-    -webkit-perspective: 50px;
+.fade {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
     height: 100%;
+    opacity: 1;
 }
-.flip {
-    height: 100%;
+.fade.ng-enter,
+.fade.ng-leave {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
 }
-.content .flip {
-    -webkit-transform-style: preserve-3d;
-    -webkit-backface-visibility: hidden;
-    -webkit-transition: all 1s ease-in-out;
+.fade.ng-enter {
+    opacity: 0;
 }
-.content .flip.ng-enter {
-    -webkit-transform: rotateY(-180deg);
+.fade.ng-enter-active {
+    opacity: 1;
 }
-.content .flip.ng-enter-active {
-    -webkit-transform: rotateY(0deg);
+.fade.ng-leave {
+    opacity: 1;
 }
-.content .flip.ng-leave {
-    -webkit-transform: rotateY(0deg);
-}
-.content .flip.ng-leave-active {
-    -webkit-transform: rotateY(180deg);
+.fade.ng-leave-active {
+    opacity: 0;
 }
