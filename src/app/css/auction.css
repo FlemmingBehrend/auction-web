@@ -14,6 +14,12 @@
     color: #d2d2d2;
     text-shadow: 2px 2px #000eff;
 }
+.page-header {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #d2d2d2;
+    text-shadow: 2px 2px #000eff;}
 .fade {
     position: absolute;
     top: 64px;

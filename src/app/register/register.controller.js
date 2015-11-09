@@ -9,11 +9,16 @@
 
         /*jshint validthis: true*/
         var register = this;
+        register.activateForm = activateForm;
 
         activate();
 
         function activate() {
 
+        }
+
+        function activateForm() {
+            console.log('form activated');
         }
 
     }

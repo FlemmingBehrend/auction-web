@@ -1,3 +1,34 @@
-<div>
-    register page
+<div layout="row" layout-align="center center">
+    <div flex></div>
+    <div>
+        <span class="page-header">REGISTRERINGSFORM</span>
+
+        <div class="md-whiteframe-z1" flex-gt-md="100">
+            <md-content layout-padding>
+                <form name="registerForm" ng-submit="register.activateForm()">
+                    <md-input-container>
+                        <label>Navn</label>
+                        <input name="username" ng-model="register.username" required>
+                        <div ng-messages="registerForm.username.$error" ng-show="registerForm.username.$dirty">
+                            <div ng-message="required">This is required!</div>
+                        </div>
+                    </md-input-container>
+                    <md-input-container>
+                        <label>Email</label>
+                        <input name="email" ng-model="register.email" required>
+                        <div ng-messages="registerForm.email.$error" ng-show="registerForm.email.$dirty">
+                            <div ng-message="required">This is required!</div>
+                        </div>
+                    </md-input-container>
+                    <div layout="row" layout-align="end end" flex>
+                        <div flex></div>
+                        <md-button type="submit" class="md-primary"
+                                   ng-class="{'md-raised md-hue-1': (registerForm.$dirty && registerForm.$valid)}">Send
+                        </md-button>
+                    </div>
+                </form>
+            </md-content>
+        </div>
+    </div>
+    <div flex></div>
 </div>
