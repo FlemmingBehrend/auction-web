@@ -6,3 +6,4 @@ dist
 auction-web.iml
 trash.txt
 karma-coverage
+bower_components
