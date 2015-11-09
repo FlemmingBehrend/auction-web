@@ -12,4 +12,30 @@
     font-size: 60px;
     font-weight: bolder;
     color: #d2d2d2;
+    text-shadow: 2px 2px #000eff;
+}
+.content {
+    -webkit-transition: -webkit-transform 1s;
+    -webkit-perspective: 50px;
+    height: 100%;
+}
+.flip {
+    height: 100%;
+}
+.content .flip {
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: all 1s ease-in-out;
+}
+.content .flip.ng-enter {
+    -webkit-transform: rotateY(-180deg);
+}
+.content .flip.ng-enter-active {
+    -webkit-transform: rotateY(0deg);
+}
+.content .flip.ng-leave {
+    -webkit-transform: rotateY(0deg);
+}
+.content .flip.ng-leave-active {
+    -webkit-transform: rotateY(180deg);
 }
