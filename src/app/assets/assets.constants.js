@@ -2,8 +2,8 @@
     'use strict';
 
     angular.module('auction.assets')
-        .constant('serviceHost', 'http://localhost:9081')
-        .constant('resourcePath', '/resource')
+        .constant('serviceHost', 'http://localhost:8080')
+        .constant('resourcePath', '/resources')
         .constant('userRegistration', '/user-registration');
 
 })();

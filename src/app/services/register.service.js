@@ -1,11 +1,11 @@
 (function() {
     'use strict';
 
-    angular.module('auction.services').factory('register', register);
+    angular.module('auction.services').factory('registerService', registerService);
 
-    register.$inject = ['$log', '$q', 'RegisterResource'];
+    registerService.$inject = ['$log', '$q', 'RegisterResource'];
 
-    function register($log, $q, RegisterResource) {
+    function registerService($log, $q, RegisterResource) {
 
         var service = {
             registerUser: registerUser

@@ -3,22 +3,23 @@
 
     angular.module('auction.register').controller('RegisterController', RegisterController);
 
-    RegisterController.$inject = [];
+    RegisterController.$inject = ['registerService'];
 
-    function RegisterController() {
+    function RegisterController(registerService) {
 
         /*jshint validthis: true*/
         var register = this;
-        register.activateForm = activateForm;
 
         activate();
 
         function activate() {
-
-        }
-
-        function activateForm() {
-            console.log('form activated');
+            register.activateForm = function (user) {
+                registerService.registerUser(user).then(function (response) {
+                    console.log(response);
+                }).catch(function () {
+                    console.log('error registering user');
+                });
+            };
         }
 
     }

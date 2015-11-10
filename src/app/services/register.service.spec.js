@@ -7,8 +7,8 @@
 
         beforeEach(module('auction.services'));
 
-        beforeEach(inject(function (register, $httpBackend) {
-            cut = register;
+        beforeEach(inject(function (registerService, $httpBackend) {
+            cut = registerService;
             httpBackend = $httpBackend;
         }));
 

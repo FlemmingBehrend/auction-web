@@ -7,6 +7,10 @@
 
         beforeEach(module('auction.register'));
 
+        beforeEach(module(function ($provide) {
+            $provide.value('registerService', jasmine.createSpy);
+        }));
+
         beforeEach(inject(function ($rootScope, $controller) {
             scope = $rootScope;
             ctrl = $controller;

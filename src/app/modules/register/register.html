@@ -5,7 +5,7 @@
 
         <div class="md-whiteframe-z1" flex-gt-md="100">
             <md-content layout-padding>
-                <form name="registerForm" ng-submit="register.activateForm()">
+                <form name="registerForm" ng-submit="register.activateForm({name: register.username, email: register.email})">
                     <md-input-container>
                         <label>Navn</label>
                         <input name="username" ng-model="register.username" required>
