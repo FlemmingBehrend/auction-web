@@ -15,7 +15,14 @@
 
         function registerUser(user) {
             $log.info('register user: ' + angular.toJson(user));
-
+            var deferred = $q.defer();
+            var promise = RegisterResource.save(user).$promise;
+            promise.then(function (data) {
+                deferred.resolve(data);
+            }).catch(function (error) {
+                $log.error(error);
+            });
+            return deferred.promise;
         }
 
     }

@@ -4,6 +4,6 @@
     angular.module('auction.assets')
         .constant('serviceHost', 'http://localhost:9081')
         .constant('resourcePath', '/resource')
-        .constant('userRegistration', 'user-registration');
+        .constant('userRegistration', '/user-registration');
 
 })();

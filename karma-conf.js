@@ -31,6 +31,7 @@ module.exports = function (config) {
             // services
             'src/app/services/services.module.js',
             'src/app/services/register.service.js',
+            'src/app/services/register.service.spec.js',
 
             // Welcome module
             'src/app/modules/welcome/welcome.module.js',
