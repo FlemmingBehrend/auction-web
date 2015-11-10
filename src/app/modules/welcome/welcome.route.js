@@ -9,7 +9,7 @@
         $stateProvider
             .state('auction.welcome', {
                 url: '/',
-                templateUrl: 'app/welcome/welcome.html',
+                templateUrl: 'app/modules/welcome/welcome.html',
                 controller: 'WelcomeController',
                 controllerAs: 'welcome'
             });

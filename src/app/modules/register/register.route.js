@@ -9,7 +9,7 @@
         $stateProvider
             .state('auction.register', {
                 url: '/register',
-                templateUrl: 'app/register/register.html',
+                templateUrl: 'app/modules/register/register.html',
                 controller: 'RegisterController',
                 controllerAs: 'register'
             });
