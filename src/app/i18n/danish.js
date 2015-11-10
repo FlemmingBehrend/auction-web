@@ -3,7 +3,7 @@ var danishTranslations = {
         TITLE: 'Online Auktionshus'
     },
     message: {
-        WELCOME: 'Velkommen til aktionshuset. For at kunne se og deltage i aktioner skal du registre dig eller logge ind.'
+        WELCOME: 'Velkommen til aktionshuset. For at kunne se og deltage i aktioner skal du registrere dig eller logge ind.'
     },
     button: {
         LANG_DANISH: 'Dansk',

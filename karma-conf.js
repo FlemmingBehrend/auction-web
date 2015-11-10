@@ -2,12 +2,10 @@ module.exports = function (config) {
 
     var path = require('path');
 
-    config.set({
+    return config.set({
         basePath: '.',
         frameworks: ['jasmine'],
         files: [
-            // Matchers
-
             // Third lib dependencies
             'src/bower_components/jquery/dist/jquery.js',
             'src/bower_components/lodash/lodash.js',
@@ -25,6 +23,15 @@ module.exports = function (config) {
             'src/app/auction.module.js',
             'src/app/auction.config.js',
 
+            // assets module
+            'src/app/assets/assets.module.js',
+            'src/app/assets/assets.constants.js',
+            'src/app/assets/assets.resources.js',
+
+            // services
+            'src/app/services/services.module.js',
+            'src/app/services/register.service.js',
+
             // Welcome module
             'src/app/welcome/welcome.module.js',
             'src/app/welcome/welcome.route.js',
@@ -41,17 +48,12 @@ module.exports = function (config) {
             'src/app/login/login.module.js',
             'src/app/login/login.route.js',
             'src/app/login/login.controller.js',
-            'src/app/login/login.controller.spec.js',
-
-            // services
-
-            // common modules
-            'src/app/auction.constants.js'
-
+            'src/app/login/login.controller.spec.js'
         ],
         exclude: [
             'src/**/*.ico',
-            'src/app/auction.config.js'
+            'src/app/assets/asserts.config.js',
+            'src/app/assets/asserts.resources.js'
         ],
         preprocessors: {
             'src/main/app/**/*.js': ['coverage'],

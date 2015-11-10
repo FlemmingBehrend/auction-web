@@ -1,29 +1,34 @@
 (function() {
     'use strict';
 
-    var cut, scope;
+    describe('Controller: register', function() {
 
-    beforeEach(module('auction.register'));
+        var cut, scope, ctrl;
 
-    beforeEach(inject(function ($rootScope) {
-        scope = $rootScope;
-    }));
+        beforeEach(module('auction.register'));
 
-    function createController(ctrl) {
-        cut = (function () {
-            return ctrl('RegisterController', {
-                $scope: scope
-            });
-        })();
-        return cut;
-    }
-
-    describe('initialization', function() {
-
-        it('can create the controller', inject(function($controller) {
-            cut = createController($controller);
-            expect(cut).toBeDefined();
+        beforeEach(inject(function ($rootScope, $controller) {
+            scope = $rootScope;
+            ctrl = $controller;
         }));
+
+        function createController() {
+            cut = (function () {
+                return ctrl('RegisterController', {
+                    $scope: scope
+                });
+            })();
+            return cut;
+        }
+
+        describe('initialization', function() {
+
+            it('can create the controller', function() {
+                cut = createController();
+                expect(cut).toBeDefined();
+            });
+
+        });
 
     });
 

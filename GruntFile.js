@@ -45,7 +45,7 @@ module.exports = function (grunt) {
                     '<%= conf.appRoot %>app/auction.html',
                     '<%= conf.appRoot %>app/welcome/*.html',
                     '<%= conf.appRoot %>app/register/*.html',
-                    '<%= conf.appRoot %>app/login/*.html',
+                    '<%= conf.appRoot %>app/login/*.html'
                 ]
             }
         },
