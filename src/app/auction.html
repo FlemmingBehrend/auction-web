@@ -1,8 +1,9 @@
-<md-toolbar>
+<md-toolbar class="md-tall toolbar-bg">
     <div class="md-toolbar-tools" ng-controller="AuctionController as auction">
-        <h1 style="cursor: hand">
-            <span ui-sref="auction.welcome">{{'label.TITLE' | translate}}</span>
-        </h1>
+        <div style="cursor: hand; padding-top: 30px">
+            <span class="toolbar-header-text" ui-sref="auction.welcome">{{'label.TITLE' | translate}}</span>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;stedet ghj hgjh hj j hgj gj hj g</div>
+        </div>
         <span flex></span>
         <md-button aria-label="Login" ui-sref="auction.login" aria-label="Login">
             {{'button.LOGIN' | translate}}
@@ -17,6 +18,5 @@
             {{'button.LANG_ENGLISH' | translate}}
         </md-button>
     </div>
-
 </md-toolbar>
-<ui-view class="fade"></ui-view>
+    <ui-view class="fade toolbar-fixed normal-background"></ui-view>

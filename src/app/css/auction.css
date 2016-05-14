@@ -5,6 +5,9 @@
     width: 100%;
     height: 100%;
 }
+.normal-background {
+    background-image: url("images5.jpg");
+}
 .welcome-message {
     margin-left: 100px;
     margin-right: 100px;
@@ -44,4 +47,15 @@
 }
 .fade.ng-leave-active {
     opacity: 0;
+}
+.toolbar-bg {
+    background-image: url("images.jpg");
+}
+.toolbar-fixed {
+    margin-top: 65px;
+}
+.toolbar-header-text {
+    font-size: 40px;
+    font-weight: bolder;
+    text-shadow: 2px 2px #666666;
 }
